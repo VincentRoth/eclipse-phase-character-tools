@@ -1,16 +1,16 @@
 {
   "name": "eclipse-phase-character-creator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "server.js",
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --prod --env=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --prod",
+    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "private": true,
