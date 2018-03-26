@@ -1,5 +1,5 @@
 {
-  "name": "eclipse-phase-character-creator",
+  "name": "eclipse-phase-character-tools",
   "version": "0.0.1",
   "license": "MIT",
   "main": "server.js",

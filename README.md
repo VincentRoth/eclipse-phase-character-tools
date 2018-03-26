@@ -1,4 +1,6 @@
-# EclipsePhaseCharacterCreator
+# EclipsePhaseCharacterTools
+
+A suit tools for building and playing character at Eclipse Phase table RPG.
 
 Application is available at https://eclipse-phase.herokuapp.com/
 

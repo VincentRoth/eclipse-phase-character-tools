@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('eclipse-phase-character-creator App', () => {
+describe('eclipse-phase-character-tools App', () => {
   let page: AppPage;
 
   beforeEach(() => {
