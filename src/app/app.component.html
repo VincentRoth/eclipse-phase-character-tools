@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    {{ 'common.app.title' | translate }}
+    {{ 'common.app.title' | translate }} v{{version}}
   </h1>
   <ul>
     <li (click)="changeLanguage('fr')">
@@ -16,6 +16,8 @@
 <router-outlet></router-outlet>
 
 <footer>
+  <p>
+  </p>
   <p>
     {{ 'common.app.contact' | translate }}<a href="https://github.com/VincentRoth/eclipse-phase-character-tools/issues" target="_blank">{{ 'common.app.source' | translate }}</a>.
   </p>
