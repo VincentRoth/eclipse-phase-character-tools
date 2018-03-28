@@ -9,8 +9,6 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-
   version = environment.version;
 
   languages: string[] = ['en', 'fr'];
