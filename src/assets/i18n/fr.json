@@ -1,0 +1,26 @@
+{
+    "common": {
+        "app": {
+            "title": "Eclipse Phase - Outils pour les personnages",
+            "contact": "Pour tout contact, vous pouvez ouvrir une nouvelle Issue sur le ",
+            "source": "GitHub source"
+        },
+        "license": {
+            "original-work-name": "Eclipse Phase",
+            "original-work-paternity": "Posthuman Studios, LLC",
+            "original-work-french-editor": "Black Book Editions",
+            "cc-by-nc-sa-3": "Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 International",
+            "paternity": "Ce site est produit par Roth Vincent et mis à disposition selon les termes de la ",
+            "trademark": "Eclipse Phase est une marque déposée de Posthuman Studios, LLC.",
+            "derivated-work-1": "Il s'agit d'un travail dérivé d'",
+            "derivated-work-2": " produit par ",
+            "derivated-work-3": " sous licence ",
+            "derivated-work-4": " dont la version française est éditée par ",
+            "flag-credits": "Les icones de drapeau sont utilisées sous licence libre d'usage commercial et produites par ",
+            "flag-paternity": "GoSquared",
+            "illustrations-1": "Les illustrations proviennent des ",
+            "illustrations-sources": "Hack Packs d'Eclipse Phase",
+            "illustrations-2": " sous licence "
+        }
+    }
+}

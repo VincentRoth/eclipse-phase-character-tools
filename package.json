@@ -1,7 +1,7 @@
 {
   "name": "eclipse-phase-character-tools",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "CC BY-NC-SA 3.0",
   "main": "server.js",
   "scripts": {
     "ng": "ng",
@@ -24,6 +24,8 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ngx-translate/core": "^9.1.1",
+    "@ngx-translate/http-loader": "^2.0.1",
     "core-js": "^2.4.1",
     "express": "^4.16.3",
     "rxjs": "^5.5.6",

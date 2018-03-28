@@ -1,31 +1,14 @@
 # EclipsePhaseCharacterTools
 
-A suit tools for building and playing character at Eclipse Phase table RPG.
+A suit tools for building and playing character at Eclipse Phase tabletop RPG.
 
-Application is available at https://eclipse-phase.herokuapp.com/
+Stable application version is deployed at https://eclipse-phase.herokuapp.com/.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+# License
+This project is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
-## Development server
+It is a derivated work of [Eclipse Phase](http://eclipsephase.com/) by [Posthuman Studios](http://posthumanstudios.com/) under [Creative Common Licence Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Flag icons for language change are made by [GoSquared](https://www.iconfinder.com/iconsets/flags_gosquared) under Free for commercial user license.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Other images comes from [Eclipse Phase Hack Packs](http://www.drivethrurpg.com/browse.php?keywords=eclipse+phase+hack+pack) under [Creative Common Licence Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/).

@@ -1,20 +1,37 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }} {{version}}!
+    {{ 'common.app.title' | translate }}
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <ul>
+    <li (click)="changeLanguage('fr')">
+      <img src="/assets/img/flags/france.png"> FR
+    </li>
+    <li (click)="changeLanguage('en')">
+      <img src="/assets/img/flags/united-states.png"> EN
+    </li>
+  </ul>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<router-outlet></router-outlet>
+
+<footer>
+  <p>
+    {{ 'common.app.contact' | translate }}<a href="https://github.com/VincentRoth/eclipse-phase-character-tools/issues" target="_blank">{{ 'common.app.source' | translate }}</a>.
+  </p>
+  <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a>
+  </p>
+  <p>
+    {{ 'common.license.paternity' | translate }}<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">{{ 'common.license.cc-by-nc-sa-3' | translate }}</a>.
+  </p>
+  <p>
+    {{ 'common.license.trademark' | translate }} {{ 'common.license.derivated-work-1' | translate }}<a href="http://eclipsephase.com/" target="_blank">{{ 'common.license.original-work-name' | translate }}</a>{{ 'common.license.derivated-work-2' | translate }}<a href="http://posthumanstudios.com/" target="_blank">{{ 'common.license.original-work-paternity' | translate }}</a>{{ 'common.license.derivated-work-3' | translate }}<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a>{{ 'common.license.derivated-work-4' | translate }}<a href="https://www.black-book-editions.fr/" target="_blank">{{ 'common.license.original-work-french-editor' | translate }}</a>.
+  </p>
+  <p>
+    {{ 'common.license.flag-credits' | translate }}<a href="https://www.iconfinder.com/iconsets/flags_gosquared" target="_blank">{{ 'common.license.flag-paternity' | translate }}</a>.
+  </p>
+  <p>
+    {{ 'common.license.illustrations-1' | translate }}<a href="http://www.drivethrurpg.com/browse.php?keywords=eclipse+phase+hack+pack" target="_blank">{{ 'common.license.illustrations-sources' | translate }}</a>{{ 'common.license.illustrations-2' | translate }}<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a>.
+  </p>
+</footer>
