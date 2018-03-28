@@ -11,4 +11,4 @@ It is a derivated work of [Eclipse Phase](http://eclipsephase.com/) by [Posthuma
 
 Flag icons for language change are made by [GoSquared](https://www.iconfinder.com/iconsets/flags_gosquared) under Free for commercial user license.
 
-Other images comes from [Eclipse Phase Hack Packs](http://www.drivethrurpg.com/browse.php?keywords=eclipse+phase+hack+pack) under [Creative Common Licence Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+Other images come from [Eclipse Phase Hack Packs](http://www.drivethrurpg.com/browse.php?keywords=eclipse+phase+hack+pack) under [Creative Common Licence Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](http://creativecommons.org/licenses/by-nc-sa/3.0/).
