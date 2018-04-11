@@ -2,8 +2,16 @@
     "common": {
         "app": {
             "title": "Eclipse Phase Character Tools",
-            "contact": "For any contact, please open a new issue on ",
-            "source": "GitHub sources"
+            "menu": {
+                "home": "Home",
+                "roll": "Dice roll",
+                "language": "Language",
+                "contact": "Contact"
+            },
+            "language": {
+                "english": "English",
+                "french": "Français"
+            }
         },
         "license": {
             "original-work-name": "Eclipse Phase",

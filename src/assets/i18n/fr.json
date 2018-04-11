@@ -2,8 +2,16 @@
     "common": {
         "app": {
             "title": "Eclipse Phase - Outils pour les personnages",
-            "contact": "Pour tout contact, vous pouvez ouvrir une nouvelle Issue sur le ",
-            "source": "GitHub source"
+            "menu": {
+                "home": "Accueil",
+                "roll": "Lancer de dés",
+                "language": "Langue",
+                "contact": "Contact"
+            },
+            "language": {
+                "english": "English",
+                "french": "Français"
+            }
         },
         "license": {
             "original-work-name": "Eclipse Phase",
