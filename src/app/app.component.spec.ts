@@ -1,10 +1,11 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/observable/of';
+import { AppMaterialModule } from './app.material.module';
 
 const translations: any = {
   'common': {
@@ -25,10 +26,11 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterModule,
+        RouterTestingModule,
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: FakeLoader },
-        })
+        }),
+        AppMaterialModule
       ],
       declarations: [
         AppComponent

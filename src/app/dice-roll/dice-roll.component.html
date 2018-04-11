@@ -1,3 +1,25 @@
+<button mat-raised-button color="primary" (click)="roll10Dice()">
+  {{ 'dice-roll.action.10dice' | translate }}
+</button>
+<button mat-raised-button color="primary" (click)="sum10Dice()" [disabled]="!is10Dice">
+  {{ 'dice-roll.action.add10dice' | translate }}
+</button>
+<button mat-raised-button color="primary" (click)="roll100Dice()">
+  {{ 'dice-roll.action.100dice' | translate }}
+</button>
+<button mat-raised-button color="primary" (click)="flipFlop()" [disabled]="!canFlipFlop()">
+  {{ 'dice-roll.action.moxie-flip-flop' | translate }}
+</button>
+<p *ngIf="dicesDetail && dicesDetail.length > 1">
+  {{dicesDetail.length}} {{ 'dice-roll.dices' | translate }} {{displayDicesSum()}}
+</p>
 <p>
-  dice-roll works!
+  {{diceValue}}
+  <ng-container *ngIf="is100Dice && isCritical()">
+    <span [ngSwitch]=diceValue>
+      <ng-template [ngSwitchCase]="0">{{ 'dice-roll.critical-success' | translate }}</ng-template>
+      <ng-template [ngSwitchCase]="99">{{ 'dice-roll.critical-failure' | translate }}</ng-template>
+      <ng-template ngSwitchDefault>{{ 'dice-roll.critical' | translate }}</ng-template>
+    </span>
+  </ng-container>
 </p>

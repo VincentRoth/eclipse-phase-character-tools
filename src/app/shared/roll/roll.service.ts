@@ -14,7 +14,13 @@ export class RollService {
   }
 
   roll100(): number {
-    return roll(1, 100);
+    return roll(0, 99);
+  }
+
+  flipFlop(value: number): number {
+    const ten = Math.trunc(value / 10);
+    const unit = value % 10;
+    return unit * 10 + ten;
   }
 
 }

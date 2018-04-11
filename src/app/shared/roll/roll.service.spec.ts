@@ -18,9 +18,15 @@ describe('RollService', () => {
     }
   }));
 
-  it('roll10 should roll between 1 and 100', inject([RollService], (service: RollService) => {
+  it('roll100 should roll between 0 and 99', inject([RollService], (service: RollService) => {
     for (let i = 0; i < 1000; i++) {
-      expect(service.roll100()).toBeWithinRange(1, 100);
+      expect(service.roll100()).toBeWithinRange(0, 99);
     }
+  }));
+
+  it('flipFlop should flip flop values', inject([RollService], (service: RollService) => {
+    expect(service.flipFlop(33)).toBe(33);
+    expect(service.flipFlop(91)).toBe(19);
+    expect(service.flipFlop(28)).toBe(82);
   }));
 });

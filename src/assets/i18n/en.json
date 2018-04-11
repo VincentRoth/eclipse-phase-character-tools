@@ -30,5 +30,17 @@
             "illustrations-sources": "Eclipse Phase Hack Packs",
             "illustrations-2": " under license "
         }
+    },
+    "dice-roll": {
+        "action": {
+            "10dice": "d10",
+            "100dice": "d100",
+            "add10dice": "+1d10",
+            "moxie-flip-flop": "Flip Flop"
+        },
+        "dices": "dices:",
+        "critical": "Critical !",
+        "critical-success": "Critical success!",
+        "critical-failure": "Critical failure!"
     }
 }

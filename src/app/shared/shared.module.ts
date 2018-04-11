@@ -5,12 +5,14 @@ import { RollService } from './roll/roll.service';
 
 @NgModule({
   imports: [
-    CommonModule,
-    TranslateModule
+    CommonModule
   ],
   providers: [
-    RollService
+    RollService,
+    TranslateModule.forChild().providers
   ],
-  declarations: []
+  exports: [
+    TranslateModule
+  ]
 })
 export class SharedModule { }
