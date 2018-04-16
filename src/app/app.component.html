@@ -1,39 +1,42 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button [matMenuTriggerFor]="rootMenu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <h1>
-    {{ 'common.app.title' | translate }} v{{version}}
-  </h1>
-</mat-toolbar>
+<header>
+  <mat-toolbar color="primary">
+    <button mat-icon-button [matMenuTriggerFor]="rootMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>{{ 'common.app.title' | translate }}</h1>
+  </mat-toolbar>
 
-<mat-menu #rootMenu="matMenu">
-  <a mat-menu-item routerLink="home">
-    <mat-icon>home</mat-icon>{{ 'common.app.menu.home' | translate }}
-  </a>
-  <a mat-menu-item routerLink="dice-roll">
-    <mat-icon>casino</mat-icon>{{ 'common.app.menu.roll' | translate }}
-  </a>
-  <button mat-menu-item [matMenuTriggerFor]="languageMenu">
-    <mat-icon>language</mat-icon>{{ 'common.app.menu.language' | translate }}
-  </button>
-  <a mat-menu-item href="https://github.com/VincentRoth/eclipse-phase-character-tools/issues" target="_blank">
-    <mat-icon>question_answer</mat-icon>{{ 'common.app.menu.contact' | translate }}
-  </a>
-</mat-menu>
+  <mat-menu #rootMenu="matMenu">
+    <a mat-menu-item routerLink="home">
+      <mat-icon>home</mat-icon>{{ 'common.app.menu.home' | translate }}
+    </a>
+    <a mat-menu-item routerLink="dice-roll">
+      <mat-icon>casino</mat-icon>{{ 'common.app.menu.roll' | translate }}
+    </a>
+    <button mat-menu-item [matMenuTriggerFor]="languageMenu">
+      <mat-icon>language</mat-icon>{{ 'common.app.menu.language' | translate }}
+    </button>
+    <a mat-menu-item href="https://github.com/VincentRoth/eclipse-phase-character-tools/issues" target="_blank">
+      <mat-icon>question_answer</mat-icon>{{ 'common.app.menu.contact' | translate }}
+    </a>
+  </mat-menu>
 
-<mat-menu #languageMenu="matMenu">
-  <button mat-menu-item (click)="changeLanguage('fr')">
-    <img src="/assets/img/flags/france.png">{{ 'common.app.language.french' | translate }}
-  </button>
-  <button mat-menu-item (click)="changeLanguage('en')">
-    <img src="/assets/img/flags/united-states.png">{{ 'common.app.language.english' | translate }}
-  </button>
-</mat-menu>
+  <mat-menu #languageMenu="matMenu">
+    <button mat-menu-item (click)="changeLanguage('fr')">
+      <img src="/assets/img/flags/france.png">{{ 'common.app.language.french' | translate }}
+    </button>
+    <button mat-menu-item (click)="changeLanguage('en')">
+      <img src="/assets/img/flags/united-states.png">{{ 'common.app.language.english' | translate }}
+    </button>
+  </mat-menu>
+</header>
 
-<router-outlet></router-outlet>
+<div class="flex">
+  <router-outlet></router-outlet>
+</div>
 
 <footer>
+  <p id="version">v{{version}}</p>
   <p>{{ 'common.license.paternity' | translate }}<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">{{ 'common.license.cc-by-nc-sa-3' | translate }}</a>.</p>
   <p>{{ 'common.license.derivated-work-1' | translate }}<a href="http://eclipsephase.com/" target="_blank">{{ 'common.license.original-work-name' | translate }}</a>{{ 'common.license.derivated-work-2' | translate }}<a href="http://posthumanstudios.com/" target="_blank">{{ 'common.license.original-work-paternity' | translate }}</a>{{ 'common.license.derivated-work-3' | translate }}</p>
   <p>{{ 'common.license.trademark' | translate }}</p>

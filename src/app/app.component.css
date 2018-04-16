@@ -1,3 +1,16 @@
+@media all and (min-width: 600px) {   
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+@media all and (max-width: 600px) {   
+    h1 {
+        font-size: 4vw;
+    }
+}
+
 .mat-menu-item img {
     width: 20px;
     height: 20px;
@@ -7,11 +20,16 @@
 }
 
 footer {
-    font-size: 11px;
     padding: 10px;
 }
 
 footer p {
     text-align: center;
     margin: 5px 0;
+    font-size: 11px;
+}
+
+#version {
+    font-size: inherit;
+    padding-bottom: 5px;
 }

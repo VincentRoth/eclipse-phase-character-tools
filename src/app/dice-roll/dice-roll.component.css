@@ -1,5 +1,5 @@
 button {
-    margin: 4px;
+    margin: 12px 6px 0;
     min-width: 103px;
 }
 
@@ -8,6 +8,7 @@ button span {
 }
 
 p {
+    font: sans-serif;
     text-align: center;
     min-height: 20px;
     padding: 4px;
@@ -15,12 +16,11 @@ p {
 }
 
 #dice-value {
-    font: sans-serif;
-    min-height: calc(12vh + 16px);
-    font-size: 12vh;
+    min-height: 149px;
+    font-size: 128px;
 }
 
 #critical {
-    min-height: calc(6vh + 16px);
-    font-size: 6vh;
+    min-height: 62px;
+    font-size: 52px;
 }
