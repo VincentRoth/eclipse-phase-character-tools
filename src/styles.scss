@@ -11,5 +11,21 @@ $theme: mat-light-theme($primary, $accent);
 @include footer-theme($theme);
 
 body {
+    min-height: 100vh;
     margin: 0;
+}
+
+.flex {
+    flex: 1;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
 }

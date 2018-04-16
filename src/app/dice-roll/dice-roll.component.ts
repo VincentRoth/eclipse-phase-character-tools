@@ -22,6 +22,16 @@ export class DiceRollComponent implements OnInit {
     this.is100Dice = false;
   }
 
+  getFormatedDiceValue(): string {
+    if (!this.is100Dice && !this.diceValue) {
+      return '';
+    }
+    if (this.is100Dice && this.diceValue < 10) {
+      return `0${this.diceValue}`;
+    }
+    return this.diceValue.toString();
+  }
+
   roll10Dice() {
     this.is10Dice = true;
     this.is100Dice = false;
@@ -42,6 +52,7 @@ export class DiceRollComponent implements OnInit {
   roll100Dice() {
     this.is10Dice = false;
     this.is100Dice = true;
+    this.dicesDetail = [];
 
     this.diceValue = this.rollService.roll100();
   }
