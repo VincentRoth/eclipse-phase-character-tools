@@ -5,3 +5,13 @@
     top: 4px;
     margin-right: 4px;
 }
+
+footer {
+    font-size: 11px;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px 0;
+}
