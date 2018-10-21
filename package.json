@@ -1,7 +1,7 @@
 {
   "name": "eclipse-phase-character-tools",
   "version": "0.0.1",
-  "license": "CC BY-NC-SA 3.0",
+  "license": "CC-BY-NC-SA-3.0",
   "main": "server.js",
   "scripts": {
     "ng": "ng",
